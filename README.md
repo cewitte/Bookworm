@@ -30,6 +30,20 @@ Branch: `texteditor-multiline-input`
 
 Mostly because it has nothing special in the way of configuration options, using `TextEditor` is actually easier than using `TextField` – you can’t adjust its style or add placeholder text, you just bind it to a string. However, you do need to be careful to make sure it doesn’t go outside the safe area, otherwise typing will be tricky; embed it in a `NavigationStack`, a `Form`, or similar."
 
+### Introduction to `SwiftData` and SwiftUI ([Page Link](https://www.hackingwithswift.com/books/ios-swiftui/introduction-to-swiftdata-and-swiftui))
+
+Branch: `swiftdata-intro`
+
+"First, the basics: `SwiftData` is an object graph and persistence framework, which is a fancy way of saying it lets us define objects and properties of those objects, then lets us read and write them from permanent storage.
+
+On the surface this sounds like using `Codable` and `UserDefaults`, but it’s much more advanced than that: SwiftData is capable of sorting and filtering of our data, and can work with much larger data – there’s effectively no limit to how much data it can store. Even better, SwiftData implements all sorts of more advanced functionality for when you really need to lean on it: iCloud syncing, lazy loading of data, undo and redo, and much more."
+
+There are 3 steps to adding `SwiftData` to our apps:
+
+1. We create a model class and assign the `@Model` macro to the top of it, like here in [`Student.swift`](./Bookworm/Student.swift).
+2. Add (for example) the `.modelContainer(for: Student.self)` to the `WindowGroup { ... }` as in the [`BookwormApp.swift`](./Bookworm/BookwormApp.swift)
+3. Add the `@Query var students: [Student]` to your View (or `ContentView`) and the `Environment(\.modelContext) var modelContext`, which lets you acccess the "live" version of the data (the `modelContext`).
+
 ### Acknowledgments
 
 Original code created by: [Paul Hudson - @twostraws](https://x.com/twostraws) (Thank you!)
