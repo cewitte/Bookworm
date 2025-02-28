@@ -22,6 +22,14 @@ On the other hand, `@Binding` is used when you have a simple, value type piece o
 
 This behavior makes `@Binding` extremely important for whenever you want to create a custom user interface component. At their core, UI components are just SwiftUI views like everything else, but `@Binding` is what sets them apart: while they might have their local `@State` properties, they also expose `@Binding` properties that let them interface directly with other views."
 
+### Accepting multi-line text input with TextEditor([Page Link](https://www.hackingwithswift.com/books/ios-swiftui/accepting-multi-line-text-input-with-texteditor))
+
+Branch: `texteditor-multiline-input`
+
+"We’ve used SwiftUI’s `TextField` view several times already, and it’s great for times when the user wants to enter short pieces of text. However, for longer pieces of text you might want to switch over to using a `TextEditor` view instead: it also expects to be given a two-way binding to a text string, but it has the additional benefit of allowing multiple lines of text – it’s better for giving users a large amount of space to work with.
+
+Mostly because it has nothing special in the way of configuration options, using `TextEditor` is actually easier than using `TextField` – you can’t adjust its style or add placeholder text, you just bind it to a string. However, you do need to be careful to make sure it doesn’t go outside the safe area, otherwise typing will be tricky; embed it in a `NavigationStack`, a `Form`, or similar."
+
 ### Acknowledgments
 
 Original code created by: [Paul Hudson - @twostraws](https://x.com/twostraws) (Thank you!)
