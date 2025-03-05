@@ -12,6 +12,8 @@ This time you’re going to meet `SwiftData`, which is Apple’s framework for w
 
 At the same time, we’re also going to build our first custom user interface component – a star rating widget where the user can tap to leave a score for each book. This will mean introducing you to another property wrapper, called `@Binding` – trust me, it will all make sense."
 
+![Bookworm](/images/Bookworm_animation.gif)
+
 ### Acknowledgments
 
 Original code created by: [Paul Hudson - @twostraws](https://x.com/twostraws) (Thank you!)
