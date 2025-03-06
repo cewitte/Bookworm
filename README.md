@@ -22,6 +22,14 @@ Right now it’s possible to select no title, author, or genre for books, which 
 
 ![Challenge 1](/images/challenge_1.gif)
 
+### Challenge 2
+
+Branch: `challenge-2`
+
+Modify ContentView so that books rated as 1 star are highlighted somehow, such as having their name shown in red.
+
+![Challenge 2](/images/challenge_2.gif)
+
 ### Acknowledgments
 
 Original code created by: [Paul Hudson - @twostraws](https://x.com/twostraws) (Thank you!)

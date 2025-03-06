@@ -53,7 +53,7 @@ struct AddBookView: View {
                         dismiss()
                     }
                     // Challenge 1: Right now it’s possible to select no title, author, or genre for books, which causes a problem for the detail view. Please fix this, either by forcing defaults, validating the form, or showing a default picture for unknown genres – you can choose.
-                    .disabled(title.isEmpty || author.isEmpty || genre.isEmpty || review.isEmpty || rating < 1)
+                    .disabled(title.isEmpty || author.isEmpty || genre.isEmpty || review.isEmpty)
                 }
             }
             .navigationTitle("Add Book")
