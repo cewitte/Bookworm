@@ -39,7 +39,7 @@ struct AddBookView: View {
                     TextEditor(text: $review)
                     
                     Picker("Rating", selection: $rating) {
-                        ForEach(0..<6) {
+                        ForEach(1..<6) {
                             Text("\($0)")
                         }
                     }
@@ -52,6 +52,8 @@ struct AddBookView: View {
                         modelContext.insert(newBook)
                         dismiss()
                     }
+                    // Challenge 1: Right now it’s possible to select no title, author, or genre for books, which causes a problem for the detail view. Please fix this, either by forcing defaults, validating the form, or showing a default picture for unknown genres – you can choose.
+                    .disabled(title.isEmpty || author.isEmpty || genre.isEmpty || review.isEmpty || rating < 1)
                 }
             }
             .navigationTitle("Add Book")

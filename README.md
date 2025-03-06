@@ -14,6 +14,14 @@ At the same time, we’re also going to build our first custom user interface co
 
 ![Bookworm](/images/Bookworm_animation.gif)
 
+### Challenge 1
+
+Branch: `challenge-1`
+
+Right now it’s possible to select no title, author, or genre for books, which causes a problem for the detail view. Please fix this, either by forcing defaults, validating the form, or showing a default picture for unknown genres – you can choose.
+
+![Challenge 1](/images/challenge_1.gif)
+
 ### Acknowledgments
 
 Original code created by: [Paul Hudson - @twostraws](https://x.com/twostraws) (Thank you!)

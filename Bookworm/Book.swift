@@ -23,5 +23,4 @@ class Book {
         self.review = review
         self.rating = rating
     }
-    
 }
