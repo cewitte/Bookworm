@@ -26,9 +26,15 @@ Right now it’s possible to select no title, author, or genre for books, which 
 
 Branch: `challenge-2`
 
-Modify ContentView so that books rated as 1 star are highlighted somehow, such as having their name shown in red.
+Modify `ContentView` so that books rated as 1 star are highlighted somehow, such as having their name shown in red.
 
 ![Challenge 2](/images/challenge_2.gif)
+
+### Challenge 3
+
+Branch: `challenge-3`
+
+Add a new “date” attribute to the `Book` class, assigning `Date`.now to it so it gets the current date and time, then format that nicely somewhere in `DetailView`.
 
 ### Acknowledgments
 
