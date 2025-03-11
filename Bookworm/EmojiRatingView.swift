@@ -20,12 +20,14 @@ struct EmojiRatingView: View {
             Text("🫤")
         case 4:
             Text("🙂")
-        default:
+        case 5:
             Text("😍")
+        default:
+            Text("😳")
         }
     }
 }
 
 #Preview {
-    EmojiRatingView(rating: 5)
+    EmojiRatingView(rating: 6)
 }

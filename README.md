@@ -14,6 +14,28 @@ At the same time, we’re also going to build our first custom user interface co
 
 ![Bookworm](/images/Bookworm_animation.gif)
 
+### Challenge 1
+
+Branch: `challenge-1`
+
+Right now it’s possible to select no title, author, or genre for books, which causes a problem for the detail view. Please fix this, either by forcing defaults, validating the form, or showing a default picture for unknown genres – you can choose.
+
+![Challenge 1](/images/challenge_1.gif)
+
+### Challenge 2
+
+Branch: `challenge-2`
+
+Modify `ContentView` so that books rated as 1 star are highlighted somehow, such as having their name shown in red.
+
+![Challenge 2](/images/challenge_2.gif)
+
+### Challenge 3
+
+Branch: `challenge-3`
+
+Add a new “date” attribute to the `Book` class, assigning `Date`.now to it so it gets the current date and time, then format that nicely somewhere in `DetailView`.
+
 ### Acknowledgments
 
 Original code created by: [Paul Hudson - @twostraws](https://x.com/twostraws) (Thank you!)
