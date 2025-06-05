@@ -14,7 +14,29 @@ At the same time, we’re also going to build our first custom user interface co
 
 ![Bookworm](/images/Bookworm_animation.gif)
 
-### Acknowledgments
+## Accessibility support
+
+Added Paul's code to add accessibility support:
+
+```swift
+.accessibilityElement()
+.accessibilityLabel(label)
+.accessibilityValue(rating == 1 ? "1 star" : "\(rating) stars")
+.accessibilityAdjustableAction { direction in
+    switch direction {
+    case .increment:
+        if rating < maximumRating { rating += 1 }
+    case .decrement:
+        if rating > 1 { rating -= 1 }
+    default:
+        break
+    }
+}
+```
+
+>That groups all its children together, applies the label “Rating”, but then adds a value based on the current stars. It also allows that rating value to be adjusted up or down using swipes, which is much better than trying to work through lots of individual images.
+
+## Acknowledgments
 
 Original code created by: [Paul Hudson - @twostraws](https://x.com/twostraws) (Thank you!)
 
