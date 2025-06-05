@@ -14,6 +14,7 @@ At the same time, we’re also going to build our first custom user interface co
 
 ![Bookworm](/images/Bookworm_animation.gif)
 
+<<<<<<< HEAD
 ### Challenge 1
 
 Branch: `challenge-1`
@@ -35,6 +36,29 @@ Modify `ContentView` so that books rated as 1 star are highlighted somehow, such
 Branch: `challenge-3`
 
 Add a new “date” attribute to the `Book` class, assigning `Date`.now to it so it gets the current date and time, then format that nicely somewhere in `DetailView`.
+=======
+## Accessibility support
+
+Added Paul's code to add accessibility support:
+
+```swift
+.accessibilityElement()
+.accessibilityLabel(label)
+.accessibilityValue(rating == 1 ? "1 star" : "\(rating) stars")
+.accessibilityAdjustableAction { direction in
+    switch direction {
+    case .increment:
+        if rating < maximumRating { rating += 1 }
+    case .decrement:
+        if rating > 1 { rating -= 1 }
+    default:
+        break
+    }
+}
+```
+
+>That groups all its children together, applies the label “Rating”, but then adds a value based on the current stars. It also allows that rating value to be adjusted up or down using swipes, which is much better than trying to work through lots of individual images.
+>>>>>>> f0e9235 (updated README.md with accessibility changes)
 
 ### Acknowledgments
 
