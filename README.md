@@ -36,7 +36,7 @@ Modify `ContentView` so that books rated as 1 star are highlighted somehow, such
 Branch: `challenge-3`
 
 Add a new “date” attribute to the `Book` class, assigning `Date`.now to it so it gets the current date and time, then format that nicely somewhere in `DetailView`.
-=======
+
 ## Accessibility support
 
 Added Paul's code to add accessibility support:
@@ -58,7 +58,6 @@ Added Paul's code to add accessibility support:
 ```
 
 >That groups all its children together, applies the label “Rating”, but then adds a value based on the current stars. It also allows that rating value to be adjusted up or down using swipes, which is much better than trying to work through lots of individual images.
->>>>>>> f0e9235 (updated README.md with accessibility changes)
 
 ### Acknowledgments
 
